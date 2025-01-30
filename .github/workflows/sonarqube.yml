@@ -20,4 +20,4 @@ jobs:
             -Dsonar.projectKey=kennethguru45_Joyiscoming
             -Dsonar.verbose=true
           
-          projectBaseDir: 
+          projectBaseDir: .
