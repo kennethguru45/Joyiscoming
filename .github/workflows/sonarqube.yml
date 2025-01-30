@@ -14,10 +14,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: 
             -Dsonar.projectKey=kennethguru45_Joyiscoming
             -Dsonar.verbose=true
           
-          projectBaseDir: 
+          projectBaseDir: .
