@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Configure CMake
-      run: cmake -S . -B build
+      run: cmake c++
     - name: Build
       run: cmake --build build
