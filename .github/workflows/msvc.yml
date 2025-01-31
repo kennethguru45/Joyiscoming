@@ -1,4 +1,5 @@
-name: .github/workflows/msvc.yml
+# .github/workflows/msvc.yml
+name: Microsoft C++ Code Analysis
 
 on: [push, pull_request]
 
@@ -8,6 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Configure CMake
-      run: cmake -S <relative-path-to-your-CMakeLists-directory> -B build
+      run: cmake -S . -B build
     - name: Build
       run: cmake --build build
